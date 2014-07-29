@@ -25,7 +25,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'amorzinho11',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			/*'ipFilters'=>array('127.0.0.1','::1'),*/
+			/'ipFilters'=>array('127.0.0.1','::1'),*/
 		),
 		
 	),
@@ -86,6 +86,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'anibal.souza@.com',
+		'adminEmail'=>'anibal.souza@gmail.com',
 	),
 );

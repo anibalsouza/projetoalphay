@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Alpha Run',
-
+	'theme'=>'shadow_dancer',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -36,6 +36,42 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		
+		 'widgetFactory'=>array(
+            'widgets'=>array(
+                'CGridView'=>array(
+                    'htmlOptions'=>array('cellspacing'=>'0','cellpadding'=>'0'),
+					'itemsCssClass'=>'item-class',
+					'pagerCssClass'=>'pager-class'
+                ),
+                'CJuiTabs'=>array(
+                    'htmlOptions'=>array('class'=>'shadowtabs'),
+                ),
+                'CJuiAccordion'=>array(
+                    'htmlOptions'=>array('class'=>'shadowaccordion'),
+                ),
+                'CJuiProgressBar'=>array(
+                   'htmlOptions'=>array('class'=>'shadowprogressbar'),
+                ),
+                'CJuiSlider'=>array(
+                    'htmlOptions'=>array('class'=>'shadowslider'),
+                ),
+                'CJuiSliderInput'=>array(
+                    'htmlOptions'=>array('class'=>'shadowslider'),
+                ),
+                'CJuiButton'=>array(
+                    'htmlOptions'=>array('class'=>'shadowbutton'),
+                ),
+                'CJuiButton'=>array(
+                    'htmlOptions'=>array('class'=>'shadowbutton'),
+                ),
+                'CJuiButton'=>array(
+                    'htmlOptions'=>array('class'=>'button green'),
+                ),
+            ),
+        ),
+		
+		
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(
